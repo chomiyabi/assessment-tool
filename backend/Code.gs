@@ -3,8 +3,8 @@
  * Phase 1 - 基本構造
  */
 
-// スプレッドシートID（後で設定）
-const SPREADSHEET_ID = '';
+// スプレッドシートID
+const SPREADSHEET_ID = '1tDDgfZGH4W9YyOAKCVSZyRu2CtHa7UYJ9bsIh5UZvdk';
 
 /**
  * Webアプリケーションのメインエントリーポイント (GET)
