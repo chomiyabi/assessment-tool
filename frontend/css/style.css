@@ -1,0 +1,83 @@
+/* 基本リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* カラーパレット（Spec.mdに基づく） */
+:root {
+    --color-base: #FFFFFF;
+    --color-header: #1B2951;
+    --color-primary: #4A90E2;
+    --color-secondary: #EC892E;
+    --color-bg-grey: #F5F5F5;
+    --color-text: #333333;
+    --color-text-sub: #666666;
+    --color-error: #E74C3C;
+    --color-success: #27AE60;
+    
+    --font-family: "Noto Sans JP", sans-serif;
+    --max-width: 1200px;
+    --padding: 20px;
+}
+
+/* 基本スタイル */
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text);
+    line-height: 1.6;
+    background-color: var(--color-base);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding);
+}
+
+/* ヘッダー */
+.header {
+    background-color: var(--color-header);
+    color: var(--color-base);
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* メイン */
+.main {
+    min-height: calc(100vh - 200px);
+    padding: 2rem 0;
+}
+
+.main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* フッター */
+.footer {
+    background-color: var(--color-bg-grey);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-text-sub);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .main h1 {
+        font-size: 24px;
+    }
+}
