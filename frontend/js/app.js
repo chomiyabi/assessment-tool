@@ -22,7 +22,7 @@ const AssessmentTool = {
     
     // API通信用
     api: {
-        baseUrl: '', // GAS URLを後で設定
+        baseUrl: 'https://script.google.com/macros/s/AKfycbwMW_aSrS9UyORlRdelYdQGJRBPSo2Zu8lLqQH_d-eYE-n8kCIAQ6yfiukogbtMLRe-/exec',
         
         // 設定取得
         getConfig: async function() {
